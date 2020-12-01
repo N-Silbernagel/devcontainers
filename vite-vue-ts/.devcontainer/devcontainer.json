@@ -1,0 +1,30 @@
+{
+  "name": "Vite Vue TS",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "14"
+    }
+  },
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
+  "extensions": [
+    "mgmcdermott.vscode-language-babel",
+    "msjsdiag.debugger-for-chrome",
+    "dbaeumer.vscode-eslint",
+    "donjayamanne.githistory",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "ghmcadams.lintlens",
+    "christian-kohler.path-intellisense",
+    "formulahendry.terminal",
+    "octref.vetur",
+    "bradlc.vscode-tailwindcss",
+  ],
+  "forwardPorts": [
+    3000
+  ],
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
+}
